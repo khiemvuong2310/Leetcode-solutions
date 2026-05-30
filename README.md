@@ -35,3 +35,11 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 
 ## 💡 Bài học kinh nghiệm ghi nhớ nhanh
 * **Bài 0001 (Two Sum):** Thay vì dùng Vét cạn (Brute Force) tốn $O(n^2)$, sử dụng `Dictionary` (Hash Map) trong C# giúp tối ưu thời gian tìm kiếm phần tử còn lại xuống còn $O(1)$, đưa tổng độ phức tạp thuật toán về $O(n)$.
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0009-palindrome-number) |
+<!---LeetCode Topics End-->
