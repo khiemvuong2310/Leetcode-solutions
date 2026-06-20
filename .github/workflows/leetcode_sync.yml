@@ -1,0 +1,22 @@
+name: Update LeetCode Stats
+
+on:
+  schedule:
+    # Chạy tự động vào lúc 00:00 mỗi ngày (giờ UTC)
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Giúp bạn có thể bấm nút chạy thủ công bất cứ lúc nào
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: LeetCode Stats Card
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }} # Cần tạo Personal Access Token nếu dùng metrics nâng cao
+          plugin_leetcode: yes
+          plugin_leetcode_user: khiemvuong2310 # Thay bằng username LeetCode chuẩn của bạn
+          plugin_leetcode_sections: solved
