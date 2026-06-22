@@ -8,14 +8,14 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 
 ---
 
-## 📊 Tiến độ luyện tập (Thống kê cá nhân)
+### 📊 Tiến độ luyện tập (Thống kê tự động)
 
 | Độ khó | Số lượng bài đã giải | Trạng thái |
-| :--- | :---: | :---: |
-| 🟢 Easy | 2 | Đang duy trì 🔥 |
-| 🟡 Medium | 1 | Khởi đầu tốt 🚀 |
-| 🔴 Hard | 0 | Mục tiêu tương lai 🏆 |
-
+| :--- | :---: | :--- |
+| 🟢 Easy | Đang tải... | Đang duy trì 🔥 |
+| 🟡 Medium | Đang tải... | Khởi đầu tốt 🚀 |
+| 🔴 Hard | Đang tải... | Mục tiêu tương lai 🏆 |
+| **Tổng số bài** | **Đang tải...** | |
 ---
 
 ## 💡 Bài học kinh nghiệm ghi nhớ nhanh
@@ -49,7 +49,6 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 | ------- |
 | [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
 
-<!---LeetCode Topics Start-->
 # LeetCode Topics
 ## String
 |  |
@@ -65,4 +64,3 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
-<!---LeetCode Topics End-->
