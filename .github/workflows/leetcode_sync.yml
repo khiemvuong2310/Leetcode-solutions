@@ -2,18 +2,18 @@ name: Update LeetCode Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Chạy tự động vào lúc 00:00 mỗi ngày
-  workflow_dispatch: # Cho phép bấm chạy thủ công bằng tay
+    - cron: '0 0 * * *'
+  workflow_dispatch:
 
 jobs:
   update-stats:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
@@ -25,7 +25,6 @@ jobs:
           import requests
           import re
 
-          # Thay đổi username LeetCode của bạn ở đây nếu cần
           username = "khiemvuong2310"
           url = f"https://leetcode-api-faisalshohag.vercel.app/{username}"
           
@@ -39,9 +38,7 @@ jobs:
               print("Lỗi khi gọi API LeetCode:", e)
               exit(1)
 
-          # Khởi tạo bảng Markdown mới để thay thế
-          table_content = f"""<!-- LEETCODE_STATS_START -->
-          ### 📊 Tiến độ luyện tập (Thống kê tự động)
+          table_content = f"""### 📊 Tiến độ luyện tập (Thống kê tự động)
 
           | Độ khó | Số lượng bài đã giải | Trạng thái |
           | :--- | :---: | :--- |
@@ -49,13 +46,12 @@ jobs:
           | 🟡 Medium | {medium} | Khởi đầu tốt 🚀 |
           | 🔴 Hard | {hard} | Mục tiêu tương lai 🏆 |
           | **Tổng số bài** | **{total}** | |
-          <!-- LEETCODE_STATS_END -->"""
+          """
 
-          # Đọc file README và thay thế đoạn text cũ nằm giữa 2 thẻ comment
           with open("README.md", "r", encoding="utf-8") as f:
               readme_content = f.read()
 
-          pattern = r"<!-- LEETCODE_STATS_START -->.*?<!-- LEETCODE_STATS_END -->"
+          pattern = r".*?"
           updated_content = re.sub(pattern, table_content, readme_content, flags=re.DOTALL)
 
           with open("README.md", "w", encoding="utf-8") as f:
