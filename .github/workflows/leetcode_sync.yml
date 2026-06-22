@@ -2,18 +2,68 @@ name: Update LeetCode Stats
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Tự động chạy mỗi ngày
-  workflow_dispatch: # Cho phép bấm chạy thủ công
+    - cron: '0 0 * * *' # Chạy tự động vào lúc 00:00 mỗi ngày
+  workflow_dispatch: # Cho phép bấm chạy thủ công bằng tay
 
 jobs:
-  update-readme:
+  update-stats:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Update LeetCode Stats in README
-        uses: joshcai/leetcode-sync@v1.0.5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          username: khiemvuong2310
-          # Action này chỉ cần đọc public API nên không yêu cầu METRICS_TOKEN phức tạp
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Fetch LeetCode Stats and Update README
+        run: |
+          import requests
+          import re
+
+          # Thay đổi username LeetCode của bạn ở đây nếu cần
+          username = "khiemvuong2310"
+          url = f"https://leetcode-api-faisalshohag.vercel.app/{username}"
+          
+          try:
+              response = requests.get(url).json()
+              easy = response.get("easySolved", 0)
+              medium = response.get("mediumSolved", 0)
+              hard = response.get("hardSolved", 0)
+              total = response.get("totalSolved", 0)
+          except Exception as e:
+              print("Lỗi khi gọi API LeetCode:", e)
+              exit(1)
+
+          # Khởi tạo bảng Markdown mới để thay thế
+          table_content = f"""<!-- LEETCODE_STATS_START -->
+          ### 📊 Tiến độ luyện tập (Thống kê tự động)
+
+          | Độ khó | Số lượng bài đã giải | Trạng thái |
+          | :--- | :---: | :--- |
+          | 🟢 Easy | {easy} | Đang duy trì 🔥 |
+          | 🟡 Medium | {medium} | Khởi đầu tốt 🚀 |
+          | 🔴 Hard | {hard} | Mục tiêu tương lai 🏆 |
+          | **Tổng số bài** | **{total}** | |
+          <!-- LEETCODE_STATS_END -->"""
+
+          # Đọc file README và thay thế đoạn text cũ nằm giữa 2 thẻ comment
+          with open("README.md", "r", encoding="utf-8") as f:
+              readme_content = f.read()
+
+          pattern = r"<!-- LEETCODE_STATS_START -->.*?<!-- LEETCODE_STATS_END -->"
+          updated_content = re.sub(pattern, table_content, readme_content, flags=re.DOTALL)
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(updated_content)
+
+      - name: Commit and Push changes
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update LeetCode stats in README" && git push)
