@@ -42,11 +42,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 | [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
 
 # LeetCode Topics
-## String
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
-| [0058-length-of-last-word](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0058-length-of-last-word) |
+
 ## Hash Table
 |  |
 | ------- |
@@ -56,3 +52,25 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Hash Table
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0001-two-sum) |
+| [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0013-roman-to-integer](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0013-roman-to-integer) |
+## Math
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0009-palindrome-number](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0009-palindrome-number) |
+| [0013-roman-to-integer](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0013-roman-to-integer) |
+## String
+|  |
+| ------- |
+| [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [0013-roman-to-integer](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0013-roman-to-integer) |
+| [0058-length-of-last-word](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0058-length-of-last-word) |
+<!---LeetCode Topics End-->
