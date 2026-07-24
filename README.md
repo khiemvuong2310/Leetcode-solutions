@@ -22,10 +22,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 *(Phần dưới này sẽ được LeetHub tự động quản lý và chèn thêm bài mới, tuyệt đối không xóa hoặc sửa 2 dòng comment ẩn Start và End ở ngay dưới và dưới cùng)*
 
 # LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0001-two-sum](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0001-two-sum) |
+
 
 ## Math
 |  |
@@ -72,5 +69,15 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0013-roman-to-integer](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0013-roman-to-integer) |
+| [0014-longest-common-prefix](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0014-longest-common-prefix) |
 | [0058-length-of-last-word](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0058-length-of-last-word) |
+## Array
+|  |
+| ------- |
+| [0001-two-sum](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0001-two-sum) |
+| [0014-longest-common-prefix](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0014-longest-common-prefix) |
+## Trie
+|  |
+| ------- |
+| [0014-longest-common-prefix](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0014-longest-common-prefix) |
 <!---LeetCode Topics End-->
