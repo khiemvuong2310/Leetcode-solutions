@@ -24,11 +24,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 # LeetCode Topics
 
 
-## Math
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
-| [0009-palindrome-number](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0009-palindrome-number) |
+
 ## Linked List
 |  |
 | ------- |
