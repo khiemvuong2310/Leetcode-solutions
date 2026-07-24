@@ -36,11 +36,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 
 # LeetCode Topics
 
-## Hash Table
-|  |
-| ------- |
-| [0001-two-sum](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0001-two-sum) |
-| [0003-longest-substring-without-repeating-characters](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+
 ## Sliding Window
 |  |
 | ------- |
