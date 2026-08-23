@@ -29,10 +29,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 |  |
 | ------- |
 | [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
-## Recursion
-|  |
-| ------- |
-| [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
+
 
 # LeetCode Topics
 
@@ -94,4 +91,14 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 |  |
 | ------- |
 | [0020-valid-parentheses](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0020-valid-parentheses) |
+## Linked List
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0021-merge-two-sorted-lists](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
+## Recursion
+|  |
+| ------- |
+| [0002-add-two-numbers](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0002-add-two-numbers) |
+| [0021-merge-two-sorted-lists](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0021-merge-two-sorted-lists) |
 <!---LeetCode Topics End-->
