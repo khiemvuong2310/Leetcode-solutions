@@ -63,6 +63,7 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 | [0005-longest-palindromic-substring](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
 | [0013-roman-to-integer](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0013-roman-to-integer) |
 | [0014-longest-common-prefix](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0014-longest-common-prefix) |
+| [0020-valid-parentheses](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0020-valid-parentheses) |
 | [0058-length-of-last-word](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0058-length-of-last-word) |
 ## Array
 |  |
@@ -85,4 +86,12 @@ Nơi lưu trữ và quản lý lời giải các bài toán trên LeetCode của
 |  |
 | ------- |
 | [0005-longest-palindromic-substring](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0005-longest-palindromic-substring) |
+## Stack
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0020-valid-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0020-valid-parentheses](https://github.com/khiemvuong2310/Leetcode-solutions/tree/master/0020-valid-parentheses) |
 <!---LeetCode Topics End-->
